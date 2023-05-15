@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import eyeIcon from "../../assets/images/eye-icon.svg";
 import appStore from "../../assets/images/app-store.png";
 import googlePlay from "../../assets/images/google-play.png";
-import spinnerIcon from "../../assets/images/spinner-icon.png";
 
 import "./Login.css";
 
