@@ -12,6 +12,13 @@
   margin: 22px auto 12px;
 }
 
+.error-message {
+  font-size: 11px;
+  align-self: end;
+  color: red;
+  text-align: right;
+}
+
 .login-section {
   width: 350px;
   background-color: #fff;
@@ -40,6 +47,8 @@
 
 .form-group {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-group:first-child {
@@ -66,17 +75,32 @@
     Arial, sans-serif;
 }
 
+.input-valid {
+  border-color: #dbdbdb;
+}
+
+.input-valid:focus {
+  box-shadow: none;
+  border: 1px solid #a8a8a8;
+  outline: none;
+}
+
+.input-invalid {
+  border-color: red;
+}
+
+.input-invalid:focus {
+  box-shadow: none;
+  border: 1px solid red;
+  outline: none;
+}
+
+
 .has-error .form-control {
   outline: none;
   box-shadow: none !important;
   transition: none;
   border-color: #ff4500 !important;
-}
-
-.form-control:focus {
-  box-shadow: none;
-  border: 1px solid #a8a8a8;
-  outline: none;
 }
 
 .help-block {
@@ -104,9 +128,9 @@
   margin: 0;
   background-color: transparent;
   position: absolute;
-  top: 50%;
+  top: 7px;
   right: 8px;
-  transform: translateY(-50%);
+  /*transform: translateY(-50%);*/
   outline: none !important;
 }
 
